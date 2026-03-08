@@ -1,8 +1,5 @@
 package facil;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Arrays2 {
 
     /*
@@ -15,10 +12,10 @@ public class Arrays2 {
      */
 
     public static void main(String[] args) {
-        int[] numeros = {2,3,5,6,7,5,3,3};
-        for (int i = 0; i < numeros.length; i++){
-            System.out.println(numeros[i]);
-        }
+//        int[] numeros = {2,3,5,6,7,5,3,3};
+//        for (int i = 0; i < numeros.length; i++){
+//            System.out.println(numeros[i]);
+//        }
 //        int number = 5;
 //        int resul = 0;
 //        for (int i = 0; i < numeros.length;i++){
@@ -47,8 +44,26 @@ public class Arrays2 {
 //
 //
 
+        //inverter um array de numeros
 
+        int[] arr = {1,2,3,4,5};
 
+        int inicio = 0;
+        int fim = arr.length - 1;//indice começa no zero que difere da quantidade de elementos(arr.length)
 
+        while(inicio < fim){
+
+            int temp = arr[inicio];//guarga o valor temporariamente
+            arr[inicio] = arr[fim];
+            arr[fim] = temp;
+
+            inicio++;//mover os ponteiros esquerda->direita
+            fim--;//direita->esquerda
+        }
+
+        for (int n : arr) {
+            System.out.print(n + " ");
+        }}
     }
-}
+
+

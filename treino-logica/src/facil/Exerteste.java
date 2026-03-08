@@ -24,6 +24,8 @@ public class Exerteste {
             System.out.println(i);
         }
 
+
+
         /*
         Escreva um trecho de código que solicite ao usuário que insira um número inteiro e o imprima na
         tela.
